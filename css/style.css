@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+a{
+   text-decoration: none; 
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a{
+    text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: #2f2e41;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+.SearchArea{
+    position: fixed;
+    right: 95px;
+    top: 50px;
+    width: 185px;
+    height: 45px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 3px 3px 30px rgba(160, 151, 245, 0.1);
+    box-sizing: border-box;
+    z-index: 1;
+    border: 1px solid rgba(160, 150, 248, 0.1);
+}
+.searchbox{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    width: 170px;
+    height: 45px;
+}
+.searchbox input{
+    width: 135px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1F1F1F;
+    font-family: Calibri;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+.searchbox input::placeholder{
+    color: #1D1D1D;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: poppins;
+}
+.section1{
+    position:absolute;
+    left:15%;
+    top: 50%;
+    transform: translate(-15%,-50%);
+
+}
+.section1 img{
+    height: 290px;
+}
+.section1Button{
+    position: absolute;
+	top: 50%;
+	left:90%;
+	transform: translate(-90%,-50%);
+}
+.section1Button h1, h2{
+    font-family: Reboto;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    letter-spacing: 3px;
+    color: #3D3D4A;
+    text-transform: uppercase;
+}
+.section1Button span{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    margin: 0px;
+    line-height: 60px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px #7A72FF;
+    letter-spacing: 3px;
+    color: #7A72FF;
+    text-transform: uppercase;
+
+}
+.section1Button h1{
+    letter-spacing: 26px;
+}
+.section1Button h1 span{
+    letter-spacing: 26px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    background-color: #2f2e41;
+    box-shadow: 2px 2px  30px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    margin-top: 20px;
+    color: #fff;
+    font-family: calibri;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    border: transparent !important;
+}
+.btn:hover{
+    background-color: #7A72FF;
+    color: #fff;
+    transition: all ease 1s;
+}
+.iconArea{
+    position: fixed;
+    left:30px;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: rgb(252, 241, 243);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+.iconArea a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+}
+.iconArea a i{
+    color: rgba(39,39,39,0.80);
+}
+.iconArea a:hover .fa-facebook-f{
+    color: #3b5998;
+}
+.iconArea a:hover .fa-twitter{
+    color:#00acee;
+}
+.iconArea a:hover .fa-instagram{
+    color: #dd1f4e;
+}
+.iconArea a:hover .fa-youtube{
+    color: #FF0000;
+}
+.productSection{
+    width: 85%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 30px rgba(167,158,245,0.2);
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    margin-top: -60px;
+    position: relative;
+    background-size: 1000px;
+    border-radius: 10px;
+
+}
+.productSection h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    font-family: myriad pro;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+.productSection h3 span{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    font-family: myriad pro;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    color: #7A72FF;
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width:100%;
+}
+.productBox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 10px 30px;
+}
+.productBox img{
+    height: 180px;
+}
+.productBox p{
+    color: #4d4d4d70;
+    font-family: myriad pro;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+}
+.productBox a{
+    color: #2c2c2c;
+    font-family: poppins;
+    font-size: 1rem;
+}
+.BuyBtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    background: linear-gradient(120deg,#6b60ec 20%,#a166f4);
+    color: #FFFFFF;
+    display: none;
+    animation: fade 0.5s;
+}
+.productBox:hover .BuyBtn{
+    display: flex;
+}
+.productBox:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #FFFFFF;
+}
+.productBox:hover a:last-child{
+    color: #fff;
+    transition: all ease 0.3s;
+}
+.about{
+    display: flex;
+    width: 85%;
+    margin: 50px auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+.aboutBox{
+    width: 40%;
+    font-family: myriad pro;
+}
+.aboutBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutBox h4 span{
+    color: #7A72FF;
+}
+.aboutBox h1{
+    color: #333333;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.aboutBox h4{
+    color: #333333;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutBox p{
+    font-size: 1rem;
+    color: #727272;
+    letter-spacing: 0.5px;
+}
+.Notification{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.03);
+}
+.Notification h3{
+    font-size: 2rem;
+    color:rgba(56, 56, 56);
+}
+.NotificationInput{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+.NotificationInput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.NotificationButton{
+    width: 120px;
+    height: 40px;
+    background-color: #202020;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+.NotificationButton:hover{
+    background-color: #6b60ec;
+    transition: all ease 0.5s;
+}
+footer{
+    background-color: black!important;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: #f2f2f2;
+}
+/*PC and Mobile & Tablet Responsive CSS */
+
+/*@media (max-width: 1024px) {
+    .logo {
+        left: 20px;
+        top: 20px;
+    }
+    .SearchArea, .searchbox {
+        right: 20px;
+        top: 20px;
+        width: 150px;
+        height: 40px;
+    }
+    .searchbox input {
+        width: 120px;
+    }
+    .section1 {
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -40%);
+        text-align: center;
+    }
+    .section1 img {
+        height: 200px;
+    }
+    .section1Button h1, .section1Button h2 {
+        font-size: 2.5rem;
+        line-height: 45px;
+    }
+    .btn {
+        width: 130px;
+        height: 38px;
+    }
+    .iconArea {
+        left: 15px;
+        padding: 5px 0;
+    }
+    .iconArea a {
+        padding: 12px;
+    }
+    .productSection {
+        width: 90%;
+        padding: 30px;
+    }
+    .productBox {
+        width: 220px;
+        height: 300px;
+        margin: 12px;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .aboutBox {
+        width: 85%;
+        margin-bottom: 25px;
+    }
+    .NotificationInput {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section1Button h1, .section1Button h2 {
+        font-size: 2rem;
+        line-height: 40px;
+    }
+    .btn {
+        width: 115px;
+        height: 32px;
+    }
+    .iconArea {
+        display: none;
+    }
+    .productBox {
+        width: 190px;
+        height: 270px;
+    }
+    .Notification h3 {
+        font-size: 1.8rem;
+    }
+    .NotificationInput {
+        height: 55px;
+    }
+    .NotificationButton {
+        width: 110px;
+        height: 38px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        left: 10px;
+        top: 10px;
+    }
+    .SearchArea, .searchbox {
+        right: 10px;
+        top: 10px;
+        width: 120px;
+        height: 35px;
+    }
+    .searchbox input {
+        width: 100px;
+    }
+    .section1 img {
+        height: 150px;
+    }
+    .section1Button h1, .section1Button h2 {
+        font-size: 1.8rem;
+        line-height: 35px;
+    }
+    .btn {
+        width: 105px;
+        height: 30px;
+    }
+    .productBox {
+        width: 160px;
+        height: 230px;
+    }
+    .aboutBox h1 {
+        font-size: 2.2rem;
+    }
+    .NotificationInput {
+        flex-direction: column;
+        height: auto;
+        padding: 12px;
+    }
+}
+.NotificationButton {
+    width: 100%;
+}
+.NotificationInput input {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 12px;
+}
